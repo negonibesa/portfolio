@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RAKUTIN — UI/UX-дизайнер · дизайн-инженерия и AI</title>
+<meta name="description" content="UI/UX-дизайнер Андрей Ракутин: 16 лет в диджитале, дизайн-системы, AI-пайплайны Figma → HTML, реверс-инжиниринг продуктов в Figma, 3D в вебе. Awwwards ×10, CSSDA ×11."/>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%2314160f'/%3E%3Ccircle cx='16' cy='16' r='9' fill='%23d2ff00'/%3E%3C/svg%3E"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&family=Unbounded:wght@700;800&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet"/>
+<meta name="author" content="Andrey Rakutin"/>
+<meta name="robots" content="index,follow,max-image-preview:large"/>
+<meta property="og:locale" content="ru_RU"/>
+<meta property="og:site_name" content="Andrey Rakutin"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="Andrey Rakutin — UI/UX-дизайнер"/>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Person", "url": "https://rakutin.pro/", "image": "https://rakutin.pro/og.png", "name": "Андрей Ракутин", "alternateName": "Andrey Rakutin", "jobTitle": "Ведущий UI/UX-дизайнер", "worksFor": {"@type": "Organization", "name": "Art Performance"}, "knowsAbout": ["UI/UX дизайн", "дизайн-системы", "Figma", "AI-пайплайны", "three.js", "WebGL", "реверс-инжиниринг интерфейсов"], "sameAs": ["https://t.me/rakutin", "https://www.behance.net/rakutin"], "award": ["Awwwards ×10", "CSS Design Awards ×11", "Золотой сайт ×11", "Рейтинг Рунета ×5", "Tagline Awards ×3"]}</script>
+<link rel="canonical" href="https://rakutin.pro/"/>
+<meta property="og:url" content="https://rakutin.pro/"/>
+<meta property="og:image" content="https://rakutin.pro/og.png"/>
+<meta property="og:image:width" content="1200"/>
+<meta property="og:image:height" content="630"/>
+<meta property="og:image:alt" content="Andrey Rakutin — UI/UX-дизайнер"/>
+<meta name="twitter:image" content="https://rakutin.pro/og.png"/>
+<meta property="og:type" content="website"/>
+<meta property="og:title" content="Andrey Rakutin — UI/UX-дизайнер, дизайн-инженерия и&nbsp;AI"/>
+<meta property="og:description" content="Дизайн-системы, AI-пайплайны Figma → HTML и&nbsp;3D в&nbsp;вебе. 16&nbsp;лет в&nbsp;диджитале."/>
+<meta name="theme-color" content="#121212"/>
+<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- headline words: scattered + pointer-driven, assemble with the logo (blend: exclusion) -->
+<div class="hero-words" aria-hidden="true"><div class="hw-hint">скролл <span>↓</span></div><div class="hw-block"><div class="hw-line"><span class="hw">Мой</span><span class="hw hw--sp hw--serif">дизайн(*)</span></div><div class="hw-line"><span class="hw">собирается</span></div><div class="hw-line"><span class="hw">сам</span></div></div><div class="hw-copy"><p class="hw-note">*AI-пайплайн: Figma&nbsp;MCP&nbsp;→ Open&nbsp;Design&nbsp;→ OpenCode&nbsp;→ HTML/Tailwind. Прототипы для&nbsp;стейкхолдеров&nbsp;— без&nbsp;участия разработчиков.</p><span>© 2026</span></div></div>
+
+<!-- ======= CURSOR ======= -->
+<div class="cursor" id="cursorDot" aria-hidden="true"></div>
+<div class="cursor-ring" id="cursorRing" aria-hidden="true"></div>
+
+<!-- ======= HEADER ======= -->
+<header class="header" id="header">
+  <a class="header__brand js-scroll" data-cursor="extend" data-target="#hero" href="#hero">
+    ANDREY RAKUTIN
+  </a>
+  <nav class="header__nav">
+    <a class="nl js-scroll" data-cursor="extend" data-target="#experience" href="#experience"><span class="nl__wrap"><span class="nl__a">Опыт</span><span class="nl__b">Опыт</span></span></a>
+    <a class="nl js-scroll" data-cursor="extend" data-target="#pipeline" href="#pipeline"><span class="nl__wrap"><span class="nl__a">AI-пайплайн</span><span class="nl__b">AI-пайплайн</span></span></a>
+    <a class="nl js-scroll" data-cursor="extend" data-target="#awards" href="#awards"><span class="nl__wrap"><span class="nl__a">Награды<sup class="nl__n" data-count="awards"></sup></span><span class="nl__b">Награды<sup class="nl__n" data-count="awards"></sup></span></span></a>
+    <a class="nl js-scroll" data-cursor="extend" data-target="#contact" href="#contact"><span class="nl__wrap"><span class="nl__a">Контакт</span><span class="nl__b">Контакт</span></span></a>
+  </nav>
+  <div class="header__meta mono">MSK&nbsp;·&nbsp;<span id="clock">--:--</span></div>
+</header>
+
+<main id="main">
+
+  <!-- ======= HERO ======= -->
+  <section class="hero hero--textless" id="hero">
+    <div class="hero__top mono">
+      <span class="hero__meta-item">Ведущий UI/UX Designer</span>
+      <span class="hero__meta-item">Дизайн-инженерия и&nbsp;AI</span>
+      <span class="hero__meta-item">16&nbsp;лет в&nbsp;диджитале</span>
+    </div>
+    <h1 class="hero__title">Мой дизайн собирается сам</h1>
+    <div class="hero__foot">
+      <p class="hero__note mono">*AI-пайплайн: Figma&nbsp;MCP&nbsp;→ Open&nbsp;Design&nbsp;→ OpenCode&nbsp;→ HTML/Tailwind. Прототипы для&nbsp;стейкхолдеров&nbsp;— без&nbsp;участия разработчиков.</p>
+      <div class="hero__scroll mono" aria-hidden="true">
+        <span>СКРОЛЛ</span>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= MANIFESTO ======= -->
+  <section class="manifesto mf" id="manifesto">
+    <div class="mf-blk mf-blk--1">
+      <span class="mf-n">(1)</span>
+      <p class="mf-t js-words">AI ускоряет работу, но&nbsp;решения принимает человек. Машина собирает основу, а&nbsp;я&nbsp;отвечаю за&nbsp;логику, структуру и&nbsp;финальную проверку.</p>
+    </div>
+    <div class="mf-blk mf-blk--2">
+      <span class="mf-n">(2)</span>
+      <div class="mf-r">
+        <p class="mf-t">Дизайн <span class="serif-i">проходит&nbsp;путь</span> от&nbsp;Figma до&nbsp;готового HTML с&nbsp;помощью AI. Прототипы для&nbsp;заказчиков&nbsp;— без&nbsp;разработчиков.</p>
+        <div class="mf-small">
+          <p>Никакой магии&nbsp;— системный подход и&nbsp;внимание к&nbsp;деталям, которые действительно двигают результат.</p>
+          <p>У&nbsp;каждого решения есть причина, а&nbsp;вместе они собирают интерфейсы, которым доверяют.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= WARP ======= -->
+  <section class="warp" id="warp" aria-label="Компетенции">
+    <canvas class="warp__cv" id="warpCv" aria-hidden="true"></canvas>
+    <ul class="warp__list">
+      <li>Дизайн-системы</li><li>AI-автоматизация</li><li>3D в&nbsp;вебе</li><li>Прототипы</li><li>Human-in-the-loop</li>
+    </ul>
+  </section>
+
+  <!-- ======= NUMBERS ======= -->
+  <section class="numbers" id="numbers">
+    <h2 class="sr-only">Результаты в цифрах</h2>
+    <div class="num-row">
+      <span class="num-row__val" data-count="16" data-suffix="+">0</span>
+      <span class="num-row__lab">лет в&nbsp;диджитале</span>
+    </div>
+    <div class="num-row">
+      <span class="num-row__val" data-count="95" data-suffix="%">0</span>
+      <span class="num-row__lab">консистентность интерфейсов</span>
+    </div>
+    <div class="num-row">
+      <span class="num-row__val" data-count="40" data-prefix="-" data-suffix="%">0</span>
+      <span class="num-row__lab">времени на&nbsp;новые экраны</span>
+    </div>
+  </section>
+
+  <!-- ======= EXPERIENCE ======= -->
+  <section class="exp" id="experience">
+    <div class="exp__sticky">
+      <div class="sec-label exp__label">(Опыт)</div>
+      <h2 class="exp__company">
+        <span class="rl"><span class="rl__in">ART</span></span>
+        <span class="rl"><span class="rl__in rl__in--outline">PERFORMANCE<span class="fn">(<span class="fn__s">*</span>)</span></span></span>
+      </h2>
+      <div class="exp__facts">
+        <span>(*) ТОП-100 digital-агентство&nbsp;·&nbsp;Москва</span>
+        <span>Ведущий UI/UX Designer</span>
+        <span>01.2009&nbsp;— 08.2025&nbsp;·&nbsp;16&nbsp;лет 3&nbsp;мес</span>
+        <span>Два высших: инженер и&nbsp;маркетолог</span>
+      </div>
+    </div>
+    <div class="exp__list">
+      <article class="exp-item">
+        <span class="exp-item__idx">(1)</span>
+        <h3 class="exp-item__title">AI-пайплайн дизайн-систем</h3>
+        <p class="exp-item__txt">Собрал цепочку: Figma / Pixso / Penpot → Open Design → OpenCode. Токены и&nbsp;компоненты переносятся в&nbsp;JSON, а&nbsp;интерфейсы выгружаются в&nbsp;HTML/Tailwind. Прототипы для&nbsp;заказчиков делаются без&nbsp;разработчиков. Инструмент окупился за&nbsp;3 месяца.</p>
+      </article>
+      <article class="exp-item">
+        <span class="exp-item__idx">(2)</span>
+        <h3 class="exp-item__title">Дизайн-системы<br>для&nbsp;ключевых клиентов</h3>
+        <p class="exp-item__txt">Провёл аудит и&nbsp;рефакторинг дизайн-систем Ассоциации Банков РФ и&nbsp;Адвокатской палаты РФ: убрал дубли, привёл токены в&nbsp;порядок, написал документацию. Интерфейсы стали на&nbsp;95% согласованнее, а&nbsp;новые экраны делаются на&nbsp;30–40% быстрее.</p>
+      </article>
+      <article class="exp-item">
+        <span class="exp-item__idx">(3)</span>
+        <h3 class="exp-item__title">Прозрачный хендовер</h3>
+        <p class="exp-item__txt">Путь от&nbsp;интерактивных AI-прототипов до&nbsp;MD-спецификаций виджетов. У&nbsp;фронтенда появился единый источник правды, а&nbsp;споры на&nbsp;стыке дизайна и&nbsp;разработки закончились.</p>
+      </article>
+      <article class="exp-item">
+        <span class="exp-item__idx">(4)</span>
+        <h3 class="exp-item__title">3D и&nbsp;AI-визуализация в&nbsp;процессе</h3>
+        <p class="exp-item__txt">Внедрил Spline для&nbsp;3D в&nbsp;вебе и&nbsp;AI-инструменты (Flux, Midjourney, Figma AI). Концепции и&nbsp;мудборды теперь делаются в&nbsp;разы быстрее.</p>
+      </article>
+      <article class="exp-item">
+        <span class="exp-item__idx">(5)</span>
+        <h3 class="exp-item__title">UX-руководство</h3>
+        <p class="exp-item__txt">Вёл проекты для&nbsp;промышленности, СМИ, FMCG, e-commerce и&nbsp;финтеха: сценарии, юзабилити-аудит, интерактивные прототипы и&nbsp;микровзаимодействия, которые повышают вовлечённость.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ======= PIPELINE ======= -->
+  <section class="pipe" id="pipeline">
+    <div class="sec-label pipe__label">(AI-пайплайн)</div>
+    <h2 class="pipe__title">
+      <span class="rl"><span class="rl__in">От&nbsp;макета</span></span>
+      <span class="rl"><span class="rl__in rl__in--lime">к&nbsp;коду</span></span>
+    </h2>
+    <div class="pipe__flow" id="pipeFlow">
+      <div class="pipe-node">
+        <span class="pipe-node__step">(1) Input</span>
+        <span class="pipe-node__name">Figma / Pixso / Penpot</span>
+        <span class="pipe-node__sub">MCP-серверы&nbsp;·&nbsp;токены&nbsp;·&nbsp;компоненты JSON</span>
+      </div>
+      <div class="pipe-link" aria-hidden="true"><span>↘</span></div>
+      <div class="pipe-node">
+        <span class="pipe-node__step">(2) Parse</span>
+        <span class="pipe-node__name">Open Design</span>
+        <span class="pipe-node__sub">семантический аудит&nbsp;·&nbsp;нормализация</span>
+      </div>
+      <div class="pipe-link" aria-hidden="true"><span>↗</span></div>
+      <div class="pipe-node">
+        <span class="pipe-node__step">(3) Build</span>
+        <span class="pipe-node__name">OpenCode + Ollama</span>
+        <span class="pipe-node__sub">локальные модели&nbsp;·&nbsp;Qwen&nbsp;·&nbsp;конфиденциальность</span>
+      </div>
+      <div class="pipe-link" aria-hidden="true"><span>↘</span></div>
+      <div class="pipe-node pipe-node--out">
+        <span class="pipe-node__step">(4) Output</span>
+        <span class="pipe-node__name">HTML / Tailwind</span>
+        <span class="pipe-node__sub">чистая архитектура&nbsp;·&nbsp;ручной аудит&nbsp;·&nbsp;хендовер</span>
+      </div>
+    </div>
+    <p class="pipe__result">Результат&nbsp;— интерактивный прототип с&nbsp;чистой архитектурой и&nbsp;проверенным качеством. Его можно показать заказчикам или&nbsp;передать в&nbsp;разработку как&nbsp;точный референс.</p>
+  </section>
+
+  <!-- ======= REVERSE ======= -->
+  <section class="rev" id="reverse">
+    <div class="rev__grid" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><b>Layout grid · 12 col · 16</b></div>
+    <div class="sec-label rev__label">(Реверс-инжиниринг)</div>
+    <h2 class="rev__title" aria-label="HTML в Figma, Pixso и Penpot">
+      <span class="rev__line"><span class="rev__w">HTML</span><span class="rev__arr" aria-hidden="true">→</span><svg class="rev__fig" viewBox="0 0 38 57" aria-hidden="true"><path d="M19 28.5a9.5 9.5 0 1 1 19 0 9.5 9.5 0 0 1-19 0z"/><path d="M0 47.5A9.5 9.5 0 0 1 9.5 38H19v9.5a9.5 9.5 0 1 1-19 0z"/><path d="M19 0v19h9.5a9.5 9.5 0 1 0 0-19H19z"/><path d="M0 9.5A9.5 9.5 0 0 0 9.5 19H19V0H9.5A9.5 9.5 0 0 0 0 9.5z"/><path d="M0 28.5A9.5 9.5 0 0 0 9.5 38H19V19H9.5A9.5 9.5 0 0 0 0 28.5z"/></svg></span>
+    </h2>
+    <p class="rev__txt">Есть готовый продукт? Разберу&nbsp;его и&nbsp;соберу дизайн&#8209;систему в&nbsp;Figma, Pixso или&nbsp;Penpot: слои, токены, компоненты.</p>
+    <a class="rev__cta js-scroll" data-cursor="extend" data-target="#contact" href="#contact"><span class="rc__c"><span class="rc__w"><span>Обсудить&nbsp;↗</span><span>Обсудить&nbsp;↗</span></span></span></a>
+  </section>
+
+  <!-- ======= STACK ======= -->
+  <section class="stack" id="stack">
+    <h2 class="sr-only">Стек и инструменты</h2>
+    <div class="sec-label stack__label">(Стек)</div>
+    <div class="stack__grid">
+      <div class="stack-col">
+        <h3 class="stack-col__title">AI / Пайплайн</h3>
+        <ul class="stack-col__list">
+          <li>OpenCode</li><li>Ollama + Qwen</li><li>Figma / Pixso / Penpot MCP</li><li>ChatGPT</li><li>Flux&nbsp;·&nbsp;Midjourney&nbsp;·&nbsp;Figma AI</li>
+        </ul>
+      </div>
+      <div class="stack-col">
+        <h3 class="stack-col__title">Дизайн</h3>
+        <ul class="stack-col__list">
+          <li>Figma&nbsp;— эксперт</li><li>Pixso&nbsp;·&nbsp;Penpot</li><li>Photoshop&nbsp;·&nbsp;Illustrator</li><li>After Effects&nbsp;·&nbsp;Lottie</li><li>HTML to Figma</li>
+        </ul>
+      </div>
+      <div class="stack-col">
+        <h3 class="stack-col__title">3D</h3>
+        <ul class="stack-col__list">
+          <li>Spline</li><li>Blender</li><li>Cinema 4D</li><li>3ds Max</li><li>WebGL-интеграция</li>
+        </ul>
+      </div>
+      <div class="stack-col">
+        <h3 class="stack-col__title">Разработка</h3>
+        <ul class="stack-col__list">
+          <li>HTML / CSS</li><li>Tailwind</li><li>Дизайн-токены JSON</li><li>MD-спецификации</li><li>Handoff-процессы</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= MARQUEE ======= -->
+
+
+  <!-- ======= AWARDS ======= -->
+  <section class="awards" id="awards">
+    <h2 class="sr-only">Награды и признание</h2>
+    <div class="sec-label awards__label">(Награды)</div>
+    <ul class="awards__list">
+      <li class="award-row" data-cursor="extend" data-model="cssda">
+        <span class="award-row__name">CSS Design Awards</span>
+        <span class="award-row__count"><i>×</i><b data-count="11">00</b></span>
+      </li>
+      <li class="award-row" data-cursor="extend" data-model="aww">
+        <span class="award-row__name">Awwwards</span>
+        <span class="award-row__count"><i>×</i><b data-count="10">00</b></span>
+      </li>
+      <li class="award-row" data-cursor="extend" data-model="gold">
+        <span class="award-row__name">Золотой сайт</span>
+        <span class="award-row__count"><i>×</i><b data-count="11">00</b></span>
+      </li>
+      <li class="award-row" data-cursor="extend" data-model="rr">
+        <span class="award-row__name">Рейтинг Рунета</span>
+        <span class="award-row__count"><i>×</i><b data-count="5">00</b></span>
+      </li>
+      <li class="award-row" data-cursor="extend" data-model="tag">
+        <span class="award-row__name">Tagline Awards</span>
+        <span class="award-row__count"><i>×</i><b data-count="3">00</b></span>
+      </li>
+    </ul>
+  </section>
+
+  <!-- ======= EDUCATION ======= -->
+  <!-- ======= CONTACT / FOOTER ======= -->
+  <footer class="contact" id="contact">
+    <h2 class="sr-only">Контакты</h2>
+    <div class="sec-label contact__label">(Контакт)</div>
+    <a class="contact__cta" data-cursor="extend" href="https://t.me/rakutin" rel="noopener noreferrer" target="_blank" aria-label="Напиши мне">
+      <span class="cta-l">Напиши</span>
+      <span class="cta-l"><span class="serif-i">мне</span>&nbsp;↗</span>
+    </a>
+    <canvas class="plane-cv" id="planeCv" aria-hidden="true"></canvas>
+    <div class="contact__links">
+      <a class="contact-link" data-cursor="extend" href="https://t.me/rakutin" rel="noopener noreferrer" target="_blank"><span>Telegram</span><i>@rakutin</i></a>
+      <a class="contact-link" data-cursor="extend" href="https://www.behance.net/rakutin" rel="noopener noreferrer" target="_blank"><span>Behance</span><i>/rakutin</i></a>
+      <a class="contact-link" data-cursor="extend" href="https://www.figma.com/design/CCGtkOoFJQxQO6f7HhAxjD/Portfolio?node-id=0-1" rel="noopener noreferrer" target="_blank"><span>Figma-портфолио</span><i>открыть&nbsp;↗</i></a>
+    </div>
+    <div class="contact__foot">
+      <span>© 2026 Andrey Rakutin</span>
+      <span>Сделано руками&nbsp;·&nbsp;three.js&nbsp;·&nbsp;GSAP&nbsp;·&nbsp;Lenis</span>
+    </div>
+  </footer>
+
+</main>
+
+<!-- ======= FIXED DECOR ======= -->
+
+
+
+<canvas class="aw-cv" id="awCv" aria-hidden="true"></canvas>
+<script defer src="vendor/three.min.js"></script>
+<script defer src="vendor/gsap.min.js"></script>
+<script defer src="vendor/ScrollTrigger.min.js"></script>
+<script defer src="vendor/lenis.min.js"></script>
+<script defer src="figma-logo.js"></script>
+<script defer src="plane-anim.js"></script>
+<script defer src="main.js"></script>
+<div class="gridkit" id="gridKit" aria-hidden="true"><i><b>1</b></i><i><b>2</b></i><i><b>3</b></i><i><b>4</b></i><i><b>5</b></i><i><b>6</b></i><i><b>7</b></i><i><b>8</b></i><i><b>9</b></i><i><b>10</b></i><i><b>11</b></i><i><b>12</b></i></div>
+</body>
+</html>
